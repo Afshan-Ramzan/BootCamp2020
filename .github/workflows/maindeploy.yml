@@ -28,4 +28,4 @@ jobs:
     - name: Installing Surge
     - run: npm install -g surge
     - name: Deploying website |
-    - run surge ./ afshanbootcamp2020.surge.sh --token ${{secrets.SURGE_TOKEN}}
+    - run: surge ./ afshanbootcamp2020.surge.sh --token ${{secrets.SURGE_TOKEN}}
