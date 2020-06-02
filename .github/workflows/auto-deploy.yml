@@ -1,20 +1,19 @@
 name: BootCamp2020 First Assignment
 
-on:
-  push:
-    branches: [ master ]
+on: [push]
 
 jobs:
-  build:
+  deploy:
 
     runs-on: ubuntu-latest
 
     steps:
+       uses: actions/checkout@v2
      - name: Setup NodeJs
        uses: actions/setup-node@v2-beta
        with:
           node-version: 12.x
-          
+
      - name: Install Surge
        run: npm install -g surge
       -name: Deploying Website
