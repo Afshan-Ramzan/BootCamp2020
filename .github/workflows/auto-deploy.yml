@@ -2,7 +2,7 @@ name: BootCamp2020 First Assignment
 
 on:
   push:
-    branches: [ master 
+    branches: [ master ]
 
 jobs:
   build:
