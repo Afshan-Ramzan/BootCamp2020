@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repository
-      uses: actions/checkout@v1
      - name: Setup NodeJs
        uses: actions/setup-node@v2-beta
        with:
