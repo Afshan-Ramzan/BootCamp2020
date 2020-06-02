@@ -14,10 +14,7 @@ jobs:
        uses: actions/setup-node@v2-beta
        with:
           node-version: 12
-
       - name:Installing Surge
         run: npm install --global surge
-
       - name: Deploying Website
        run: surge ./ afshanbootcamp2020.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
-          
