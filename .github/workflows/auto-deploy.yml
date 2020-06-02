@@ -18,6 +18,5 @@ jobs:
 
             - run: npm install -g surge
             - run: echo "Deploying website"
-            - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }} 
+            - run: surge ./ afshanbootcamp2020.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
           
-            - run: echo "Please visit => ${{ secrets.SURGE_DOMAIN }}"
